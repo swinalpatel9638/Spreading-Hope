@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spreading-hope.vercel.app/sitemap.xml

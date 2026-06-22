@@ -1,0 +1,4 @@
+.cache/
+.replit
+*_error_log.txt
+node_modules/
