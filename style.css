@@ -48,7 +48,7 @@ nav-sidebar styling */
   background-color: rgb(194, 222, 255, 0.6);
   backdrop-filter: blur(2px);
   box-shadow: -10px 0 10px rgb(233, 180, 180, 0.2);
-  display: flex;
+  display: none; /* hidden by default; opened via the hamburger (showSidebar) */
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1451,6 +1451,11 @@ opacity: 0.89;
   }
 /* media query to hide sidebar nav on desktop */
 @media screen and (max-width: 800px) {
+    /* hide the inline desktop nav links on small screens (hamburger takes over) */
+    .hideOnMobile {
+      display: none;
+    }
+
     .hideOnMobile a {
       color: #333; /* Default link text color */
       text-decoration: none;
@@ -1599,12 +1604,8 @@ opacity: 0.89;
         background-positon-x: 0px;
       }
     }
+}
 
-
-  
-/* ============================================================
-   PASS 1 ENHANCEMENTS  (appended — design tokens, a11y, motion)
-   ============================================================ */
 
 :root {
   /* Color system — pulled from existing palette so nothing shifts visually */
