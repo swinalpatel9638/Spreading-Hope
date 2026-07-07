@@ -1,4 +1,3 @@
-.cache/
-.replit
-*_error_log.txt
+.DS_Store
+*.log
 node_modules/
